@@ -1,0 +1,30 @@
+{
+  "languageserver": {
+    // "ocaml": {
+    //   "command": "ocamllsp",
+    //   "rootPatterns": [
+    //     "dune-project"
+    //   ],
+    //   "filetypes": [
+    //     "ocaml"
+    //   ],
+    //   "initializationOptions": {},
+    //   "settings": {}
+    // }
+    "ocaml-lsp": {
+      "command": "opam",
+      "args": [
+        "config",
+        "exec",
+        "--",
+        "ocamllsp"
+      ],
+      "filetypes": [
+        "ocaml",
+        "reason"
+      ]
+    }
+  },
+  "coc.preferences.extensionUpdateCheck": "daily"
+  //"suggest.minTriggerInputLength":2
+}
